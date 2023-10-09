@@ -1,0 +1,15 @@
+.hero-section {
+  background-image: url("/img/topbanner4.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  min-height: 130px;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.navbar-expand-md .navbar-nav .nav-link {
+  padding-right: initial;
+}
