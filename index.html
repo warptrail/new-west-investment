@@ -18,22 +18,27 @@
     <link rel="stylesheet" href="CSS/style.css" />
   </head>
   <body>
-    <div class="container-fluid p-0">
-      <div
-        class="container-fluid hero-section d-flex align-items-center justify-content-center"
-      >
-        <div class="text-center text-white">
-          <h1>New West</h1>
-          <h2>Investment Management, Inc.</h2>
-          <h3>Registered Investment Advisor</h3>
-        </div>
-      </div>
-      <div
-        class="container d-flex flex-column flex-md-row align-items-md-start"
-      >
-        <nav class="navbar navbar-expand-md navbar-light d-flex flex-md-column">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- ==================
+    Navbar
+    ================== -->
+        <nav
+          class="navbar col-md-3 col-lg-2 col-12 navbar-expand-md navbar-light d-flex flex-md-column order-md-2 p-md-2"
+        >
           <a href="#">
-            <img src="img/newWestLogo.svg" alt="logo" width="100" />
+            <img
+              id="newWestLogo"
+              src="img/newWestLogo.svg"
+              alt="logo"
+              class="d-md-none"
+            />
+            <img
+              id="cowLogo"
+              src="img/new-cow-logo-280.png"
+              alt="logo"
+              class="d-none d-md-inline"
+            />
           </a>
           <button
             class="navbar-toggler"
@@ -46,98 +51,127 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-
           <div
-            class="collapse navbar-collapse w-100"
+            class="collapse navbar-collapse w-100 align-items-start"
             id="navbarSupportedContent"
           >
             <ul
-              class="navbar-nav w-100 d-flex flex-md-column text-center text-md-end"
+              class="navbar-nav w-100 d-flex flex-md-column text-center text-md-end pr-md-5 pl-md-1 fs-5 fs-md-2"
             >
               <li>
-                <a href="#" class="nav-link" aria-current="page">Home</a>
+                <a href="#" class="nav-link" aria-current="page">
+                  <span class="pb-1">Home</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="nav-link">Company</a>
+                <a href="#" class="nav-link">
+                  <span class="pb-1">Company</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="nav-link">Process</a>
+                <a href="#" class="nav-link">
+                  <span class="pb-1">Process</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="nav-link">Approach</a>
+                <a href="#" class="nav-link">
+                  <span class="pb-1">Approach</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="nav-link">Philosophy</a>
+                <a href="#" class="nav-link">
+                  <span class="pb-1">Philosophy</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="nav-link">Brochure</a>
+                <a href="#" class="nav-link">
+                  <span class="pb-1">Brochure</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="nav-link">Letters</a>
+                <a href="#" class="nav-link">
+                  <span class="pb-1">Letters</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="nav-link">Blog</a>
+                <a href="#" class="nav-link">
+                  <span class="pb-1">Blog</span>
+                </a>
               </li>
               <li>
-                <a href="#" class="nav-link">Contact</a>
+                <a href="#" class="nav-link">
+                  <span class="pb-1">Contact</span>
+                </a>
               </li>
             </ul>
           </div>
         </nav>
-
-        <main class="ps-0 ps-md-5 flex-grow-1">
-          <div>
-            <h2>Company</h2>
-            <p>
-              New West Investment Management, Inc. was created to meet
-              investors’ needs by combining personal financial service with
-              professional investment results. Founded in 1990 by Peter V.
-              Hedberg, New West is a registered investment advisor that manages
-              separate investment portfolios on a discretionary, fee-only basis.
-            </p>
-            <p>
-              The mission of New West Investment Management, Inc. is to assist
-              our clients in building permanent, long-term wealth in order to
-              create and preserve financial independence. We think in terms of
-              financial independence rather than of retirement. More...
-            </p>
-            <h2>Process</h2>
-            <p>
-              New West uses a four-step method that promotes education and
-              understanding regarding our clients’finances. Our process outlines
-              investment objectives, identifies resources, provides investment
-              management, and tracks results. This foundation supports our
-              clients in achieving their investment goals. More...
-            </p>
-            <h2>Approach</h2>
-            <p>
-              Our investment approach utilizes a deep understanding of the
-              elements of asset pricing, ranging from governmental policies and
-              stability to economic factors including interest rate structure
-              and expectations for growth. These macroeconomic factors guide our
-              portfolio asset allocation decisions. More...
-            </p>
-            <h2>Philosophy</h2>
-            <p>
-              New West seeks to identify mispriced securities. When buying
-              shares of a company we look for abnormally profitable businesses
-              that have a sustainable advantage. We construct investment
-              portfolios, using individual securities in most cases, to increase
-              transparency and to decrease risk, fees, and taxes. More...
-            </p>
-            <h2>Personal Attention, Professional Results</h2>
-            <p>
-              Our attitude towards personal service allows us to understand
-              client needs in great detail, to tailor a portfolio suited to
-              those needs, and to communicate information in a fashion that
-              enhances our clients’ understanding and comfort with their wealth.
-              Our professional results on a risk-adjusted basis result from
-              long-term focus on large and small factors in a world increasingly
-              focused on the short-term. We manage your money like we do our
-              own. Our clients’ trust and understanding in how we manage their
-              portfolios allows us to invest for their success.
-            </p>
+        <!-- ==================
+    Hero Section
+    ================== -->
+        <div
+          class="hero-section col-12 d-flex align-items-center justify-content-center"
+        >
+          <div class="text-center text-white">
+            <h1 class="display-1">New West</h1>
+            <h2 class="">Investment Management, Inc.</h2>
+            <h3>Registered Investment Advisor</h3>
           </div>
+        </div>
+        <!-- ==================
+    Main Section
+    ================== -->
+        <main class="col-12 col-md-9 col-lg-10 p-3 p-md-5 order-md-3">
+          <h2>Company</h2>
+          <p class="plamp">
+            New West Investment Management, Inc. was created to meet investors’
+            needs by combining personal financial service with professional
+            investment results. Founded in 1990 by Peter V. Hedberg, New West is
+            a registered investment advisor that manages separate investment
+            portfolios on a discretionary, fee-only basis.
+          </p>
+          <p>
+            The mission of New West Investment Management, Inc. is to assist our
+            clients in building permanent, long-term wealth in order to create
+            and preserve financial independence. We think in terms of financial
+            independence rather than of retirement. More...
+          </p>
+          <h2>Process</h2>
+          <p>
+            New West uses a four-step method that promotes education and
+            understanding regarding our clients’finances. Our process outlines
+            investment objectives, identifies resources, provides investment
+            management, and tracks results. This foundation supports our clients
+            in achieving their investment goals. More...
+          </p>
+          <h2>Approach</h2>
+          <p>
+            Our investment approach utilizes a deep understanding of the
+            elements of asset pricing, ranging from governmental policies and
+            stability to economic factors including interest rate structure and
+            expectations for growth. These macroeconomic factors guide our
+            portfolio asset allocation decisions. More...
+          </p>
+          <h2>Philosophy</h2>
+          <p>
+            New West seeks to identify mispriced securities. When buying shares
+            of a company we look for abnormally profitable businesses that have
+            a sustainable advantage. We construct investment portfolios, using
+            individual securities in most cases, to increase transparency and to
+            decrease risk, fees, and taxes. More...
+          </p>
+          <h2>Personal Attention, Professional Results</h2>
+          <p>
+            Our attitude towards personal service allows us to understand client
+            needs in great detail, to tailor a portfolio suited to those needs,
+            and to communicate information in a fashion that enhances our
+            clients’ understanding and comfort with their wealth. Our
+            professional results on a risk-adjusted basis result from long-term
+            focus on large and small factors in a world increasingly focused on
+            the short-term. We manage your money like we do our own. Our
+            clients’ trust and understanding in how we manage their portfolios
+            allows us to invest for their success.
+          </p>
         </main>
       </div>
     </div>

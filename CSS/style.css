@@ -1,15 +1,75 @@
+@font-face {
+  font-family: "academy-engraved"; /* Choose a suitable font name */
+  src: url("../font/Academy\ Engraved\ LET\ Plain.woff") format("woff"); /* Use the path to your .woff2 font file */
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --west-red: #4e1313;
+}
+
 .hero-section {
   background-image: url("/img/topbanner4.jpg");
   background-size: cover;
   background-position: center;
   height: 30vh;
   min-height: 130px;
+  max-height: 210px;
+}
+
+h1 {
+  font-family: academy-engraved, "Times New Roman", Times, serif;
 }
 
 .container {
-  max-width: 800px;
+  /* max-width: 800px; */
 }
 
-.navbar-expand-md .navbar-nav .nav-link {
+.navbar {
+  background-color: tan;
+}
+
+#newWestLogo {
+  max-height: 40px;
+}
+
+#cowLogo {
+  /* max-height: 50px; */
+  width: 100%;
+}
+
+.navbar-nav li {
+  border-bottom: 1px solid var(--west-red);
+  margin-left: 1em;
+}
+
+/* .navbar-expand-md .navbar-nav .nav-link {
   padding-right: initial;
+} */
+
+main {
+  background: url("/img/parchmentbg3.gif");
+}
+
+/* DEBUG BORDERS */
+
+.redalert {
+  border: 2px solid greenyellow;
+}
+
+.redalert2 {
+  border: 2px solid hotpink;
+}
+
+@media (min-width: 768px) {
+  /* Your CSS rules for screens >= 768px go here */
+  .navbar {
+    max-width: 230px;
+  }
+
+  #newWestLogo {
+    max-height: none;
+    width: 100%;
+  }
 }
