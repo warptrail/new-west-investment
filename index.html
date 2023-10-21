@@ -19,12 +19,12 @@
   </head>
   <body>
     <div class="container-fluid">
-      <div class="row">
+      <div class="row parchment">
         <!-- ==================
     Navbar
     ================== -->
         <nav
-          class="navbar col-md-3 col-lg-2 col-12 navbar-expand-md navbar-light d-flex flex-md-column order-md-2 p-md-2"
+          class="navbar col-md-3 col-lg-2 col-12 navbar-expand-md navbar-light d-flex flex-md-column order-md-2 p-md-2 max-width-230 tan-bg"
         >
           <a href="#">
             <img
@@ -32,12 +32,6 @@
               src="img/newWestLogo.svg"
               alt="logo"
               class="d-md-none"
-            />
-            <img
-              id="cowLogo"
-              src="img/new-cow-logo-280.png"
-              alt="logo"
-              class="d-none d-md-inline"
             />
           </a>
           <button
@@ -110,12 +104,39 @@
     Hero Section
     ================== -->
         <div
-          class="hero-section col-12 d-flex align-items-center justify-content-center"
+          class="d-none d-md-block hero-section col-12 d-flex align-items-center justify-content-center"
+        ></div>
+
+        <!-- Side Logo Section -->
+        <div class="col-md-3 col-lg-2 redalert max-width-230 tan-bg">
+          <img
+            id="cowLogo"
+            src="img/new-cow-logo-280.png"
+            alt="logo"
+            class="d-none d-md-inline"
+          />
+        </div>
+        <!-- Title Section  -->
+        <div
+          class="title-section col-12 col-md-9 col-lg-10 pt-sm-2 pt-md-4 redalert2"
         >
-          <div class="text-center text-white">
-            <h1 class="display-1">New West</h1>
+          <div class="container text-left text-black redalert">
+            <div class="row redalert2">
+              <div class="col">
+                <span class="display-4 ibarra-font">New</span>
+              </div>
+              <div class="col">Investment Management, Inc.</div>
+            </div>
+            <div class="row">
+              <div class="col pr-3">
+                <span class="display-4 ibarra-font">West</span>
+              </div>
+
+              <div class="col">Registered Investment Advisor</div>
+            </div>
+            <!-- <h1 class="">New West</h1>
             <h2 class="">Investment Management, Inc.</h2>
-            <h3>Registered Investment Advisor</h3>
+            <h3>Registered Investment Advisor</h3> -->
           </div>
         </div>
         <!-- ==================

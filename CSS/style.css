@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap");
+
 @font-face {
   font-family: "academy-engraved"; /* Choose a suitable font name */
   src: url("../font/Academy\ Engraved\ LET\ Plain.woff") format("woff"); /* Use the path to your .woff2 font file */
@@ -19,15 +21,20 @@
 }
 
 h1 {
-  font-family: academy-engraved, "Times New Roman", Times, serif;
+  /* font-family: academy-engraved, "Times New Roman", Times, serif; */
 }
 
-.container {
-  /* max-width: 800px; */
-}
-
-.navbar {
+.tan-bg {
   background-color: tan;
+}
+
+.ibarra-font {
+  /* font-family: academy-engraved, "Times New Roman", Times, serif; */
+  /* vertical-align: middle; */
+  /* line-height: 1.5; */
+  font-family: "Ibarra Real Nova", serif;
+  /* border: 1px solid blue; */
+  padding-bottom: 0;
 }
 
 #newWestLogo {
@@ -48,8 +55,18 @@ h1 {
   padding-right: initial;
 } */
 
-main {
+.parchment {
   background: url("/img/parchmentbg3.gif");
+}
+
+.title-section {
+  background-image: initial;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  min-height: 130px;
+  max-height: 210px;
+  color: beige;
 }
 
 /* DEBUG BORDERS */
@@ -64,12 +81,22 @@ main {
 
 @media (min-width: 768px) {
   /* Your CSS rules for screens >= 768px go here */
-  .navbar {
+  .max-width-230 {
     max-width: 230px;
   }
 
   #newWestLogo {
     max-height: none;
     width: 100%;
+  }
+
+  .title-section {
+    /* background: url("/img/parchmentbg3.gif"); */
+    background-size: initial;
+    background-position: initial;
+    height: initial;
+    min-height: initial;
+    max-height: initial;
+    color: beige;
   }
 }
