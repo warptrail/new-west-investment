@@ -11,6 +11,16 @@
   --west-red: #4e1313;
 }
 
+body {
+  background: rgb(45, 69, 87);
+  background: linear-gradient(
+    180deg,
+    rgba(45, 69, 87, 1) 0%,
+    rgba(60, 58, 28, 1) 49%,
+    rgba(112, 98, 88, 1) 100%
+  );
+}
+
 .hero-section {
   background-image: url("/img/topbanner4.jpg");
   background-size: cover;
@@ -18,6 +28,12 @@
   height: 30vh;
   min-height: 130px;
   max-height: 210px;
+}
+
+.custom-container {
+  width: 100%; /* Occupy the full width of the parent container */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
 }
 
 h1 {
@@ -63,26 +79,48 @@ h1 {
   background-image: initial;
   background-size: cover;
   background-position: center;
-  height: 30vh;
-  min-height: 130px;
   max-height: 210px;
   color: beige;
 }
 
 /* DEBUG BORDERS */
 
-.redalert {
+.alert-yellowgreen {
   border: 2px solid greenyellow;
 }
 
-.redalert2 {
+.alert-pink {
   border: 2px solid hotpink;
+}
+
+.alert-red {
+  border: 2px solid red;
+}
+
+.alert-purple {
+  border: 2px solid purple;
+}
+
+.alert-blue {
+  border: 2px solid #0083ff;
+}
+
+.max-width-230 {
+  max-width: initial;
+}
+
+.fill-space {
+  width: initial;
 }
 
 @media (min-width: 768px) {
   /* Your CSS rules for screens >= 768px go here */
   .max-width-230 {
     max-width: 230px;
+  }
+
+  .hero-section {
+    max-height: initial;
   }
 
   #newWestLogo {
@@ -95,8 +133,13 @@ h1 {
     background-size: initial;
     background-position: initial;
     height: initial;
-    min-height: initial;
     max-height: initial;
     color: beige;
+  }
+}
+
+@media (min-width: 1402px) {
+  .fill-space {
+    width: calc(100% - 230px); /* Fill remaining space by default */
   }
 }
